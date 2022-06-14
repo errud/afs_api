@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>AfrikSokoDB</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{e69423eb-4647-4326-878e-851bfda9f003}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>AfrikSokoDB</RootNamespace>
+    <AssemblyName>AfrikSokoDB</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Functions" />
+    <Folder Include="Views" />
+    <Folder Include="Triggers" />
+    <Folder Include="StoredProcedures" />
+    <Folder Include="Tables" />
+    <Folder Include="Scripts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Functions\GetSecretKey.sql" />
+    <Build Include="Views\V_AppUser.sql" />
+    <Build Include="StoredProcedures\AppUserLogin.sql" />
+    <Build Include="StoredProcedures\AppUserRegister.sql" />
+    <Build Include="Tables\AppRole.sql" />
+    <Build Include="Tables\AppSalt.sql" />
+    <Build Include="Tables\AppUser.sql" />
+    <Build Include="Triggers\UserSoftDelete.sql" />
+    <Build Include="Tables\Sector.sql" />
+    <Build Include="Tables\ServiceAsked.sql" />
+    <Build Include="Tables\Supplier.sql" />
+    <Build Include="Tables\Buyer.sql" />
+    <Build Include="Tables\Comments.sql" />
+    <Build Include="Tables\Product.sql" />
+    <Build Include="Tables\Category.sql" />
+    <Build Include="Tables\ProductVariant.sql" />
+    <Build Include="Tables\ProductType.sql" />
+    <Build Include="Tables\Orders.sql" />
+    <Build Include="Tables\OrderItems.sql" />
+    <Build Include="Tables\CartItems.sql" />
+    <Build Include="Tables\Addresses.sql" />
+    <Build Include="StoredProcedures\AddSector.sql" />
+    <Build Include="StoredProcedures\AddService.sql" />
+    <Build Include="StoredProcedures\AddSupplier.sql" />
+    <Build Include="StoredProcedures\UpdateSupplier.sql" />
+    <Build Include="StoredProcedures\AddBuyer.sql" />
+    <Build Include="StoredProcedures\AddCategory.sql" />
+    <Build Include="StoredProcedures\AddProduct.sql" />
+    <Build Include="StoredProcedures\AddComment.sql" />
+    <Build Include="StoredProcedures\AddOrderItem.sql" />
+    <Build Include="StoredProcedures\AddProductType.sql" />
+    <Build Include="StoredProcedures\AddProductVariant.sql" />
+    <Build Include="StoredProcedures\UpdateBuyer.sql" />
+    <Build Include="StoredProcedures\UpdateProduct.sql" />
+    <Build Include="StoredProcedures\UpdateProductVariant.sql" />
+    <Build Include="StoredProcedures\DeleteProductVariant.sql" />
+    <Build Include="StoredProcedures\UpdateCategory.sql" />
+    <Build Include="StoredProcedures\UpdateComment.sql" />
+    <Build Include="Triggers\ProductSoftDelete.sql" />
+    <Build Include="StoredProcedures\DeleteComment.sql" />
+    <Build Include="Triggers\SupplierSoftDelete.sql" />
+    <Build Include="StoredProcedures\AddAddress.sql" />
+    <Build Include="Triggers\CategorySoftDelete.sql" />
+    <Build Include="Triggers\BuyerSoftDelete.sql" />
+    <Build Include="StoredProcedures\DeleteSupplier.sql" />
+    <Build Include="StoredProcedures\DeleteCategory.sql" />
+    <Build Include="StoredProcedures\DeleteBuyer.sql" />
+    <Build Include="StoredProcedures\DeleteProduct.sql" />
+    <Build Include="StoredProcedures\UpdateAddress.sql" />
+    <Build Include="Tables\SupplyItems.sql" />
+    <Build Include="Views\V_ProductMain.sql" />
+    <Build Include="StoredProcedures\AddSupplyItem.sql" />
+    <Build Include="StoredProcedures\DeleteSupplyItem.sql" />
+    <Build Include="StoredProcedures\UpdateSupplyItem.sql" />
+    <Build Include="Tables\FavoriteProductType.sql" />
+    <Build Include="Views\V_FavoriteProdType.sql" />
+    <Build Include="StoredProcedures\DeleteAddress.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="AfrikSokoDB.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AfrikSokoDB.publish.xml" />
+  </ItemGroup>
+</Project>

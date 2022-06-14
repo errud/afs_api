@@ -1,0 +1,12 @@
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AdoToolbox\bin\Debug\net6.0\AdoToolbox.deps.json
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AdoToolbox\bin\Debug\net6.0\AdoToolbox.dll
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AdoToolbox\bin\Debug\net6.0\AdoToolbox.pdb
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AdoToolbox\obj\Debug\net6.0\AdoToolbox.csproj.AssemblyReference.cache
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AdoToolbox\obj\Debug\net6.0\AdoToolbox.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AdoToolbox\obj\Debug\net6.0\AdoToolbox.AssemblyInfoInputs.cache
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AdoToolbox\obj\Debug\net6.0\AdoToolbox.AssemblyInfo.cs
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AdoToolbox\obj\Debug\net6.0\AdoToolbox.csproj.CoreCompileInputs.cache
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AdoToolbox\obj\Debug\net6.0\AdoToolbox.dll
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AdoToolbox\obj\Debug\net6.0\refint\AdoToolbox.dll
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AdoToolbox\obj\Debug\net6.0\AdoToolbox.pdb
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AdoToolbox\obj\Debug\net6.0\ref\AdoToolbox.dll

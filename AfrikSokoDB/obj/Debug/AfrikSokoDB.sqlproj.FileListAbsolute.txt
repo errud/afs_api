@@ -1,0 +1,6 @@
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSokoDB\bin\Debug\AfrikSokoDB.dacpac
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSokoDB\bin\Debug\AfrikSokoDB.dll
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSokoDB\bin\Debug\AfrikSokoDB.pdb
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSokoDB\obj\Debug\AfrikSokoDB.sqlproj.AssemblyReference.cache
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSokoDB\obj\Debug\AfrikSokoDB.dll
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSokoDB\obj\Debug\AfrikSokoDB.pdb

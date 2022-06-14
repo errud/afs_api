@@ -1,0 +1,17 @@
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_BLL\bin\Debug\net6.0\AfrikSoko_BLL.deps.json
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_BLL\bin\Debug\net6.0\AfrikSoko_BLL.dll
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_BLL\bin\Debug\net6.0\AfrikSoko_BLL.pdb
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_BLL\obj\Debug\net6.0\AfrikSoko_BLL.csproj.AssemblyReference.cache
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_BLL\obj\Debug\net6.0\AfrikSoko_BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_BLL\obj\Debug\net6.0\AfrikSoko_BLL.AssemblyInfoInputs.cache
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_BLL\obj\Debug\net6.0\AfrikSoko_BLL.AssemblyInfo.cs
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_BLL\obj\Debug\net6.0\AfrikSoko_BLL.csproj.CoreCompileInputs.cache
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_BLL\obj\Debug\net6.0\AfrikSoko_BLL.dll
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_BLL\obj\Debug\net6.0\refint\AfrikSoko_BLL.dll
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_BLL\obj\Debug\net6.0\AfrikSoko_BLL.pdb
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_BLL\obj\Debug\net6.0\ref\AfrikSoko_BLL.dll
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_BLL\bin\Debug\net6.0\AdoToolbox.dll
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_BLL\bin\Debug\net6.0\AfrikSoko_DAL.dll
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_BLL\bin\Debug\net6.0\AfrikSoko_DAL.pdb
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_BLL\bin\Debug\net6.0\AdoToolbox.pdb
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_BLL\obj\Debug\net6.0\AfrikSoko_BLL.csproj.CopyComplete

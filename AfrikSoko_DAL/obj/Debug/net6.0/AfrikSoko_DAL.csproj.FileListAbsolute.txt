@@ -1,0 +1,15 @@
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_DAL\bin\Debug\net6.0\AfrikSoko_DAL.deps.json
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_DAL\bin\Debug\net6.0\AfrikSoko_DAL.dll
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_DAL\bin\Debug\net6.0\AfrikSoko_DAL.pdb
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_DAL\obj\Debug\net6.0\AfrikSoko_DAL.csproj.AssemblyReference.cache
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_DAL\obj\Debug\net6.0\AfrikSoko_DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_DAL\obj\Debug\net6.0\AfrikSoko_DAL.AssemblyInfoInputs.cache
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_DAL\obj\Debug\net6.0\AfrikSoko_DAL.AssemblyInfo.cs
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_DAL\obj\Debug\net6.0\AfrikSoko_DAL.csproj.CoreCompileInputs.cache
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_DAL\obj\Debug\net6.0\AfrikSoko_DAL.dll
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_DAL\obj\Debug\net6.0\refint\AfrikSoko_DAL.dll
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_DAL\obj\Debug\net6.0\AfrikSoko_DAL.pdb
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_DAL\obj\Debug\net6.0\ref\AfrikSoko_DAL.dll
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_DAL\bin\Debug\net6.0\AdoToolbox.dll
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_DAL\bin\Debug\net6.0\AdoToolbox.pdb
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSoko_DAL\obj\Debug\net6.0\AfrikSoko_DAL.csproj.CopyComplete
