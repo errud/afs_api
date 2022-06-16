@@ -10,7 +10,7 @@ namespace AfrikSoko_DAL.Interface
     public interface ISectorRepository
     {
         IEnumerable<Sector> GetAll();
-        string GetNameById(int Id);
-        bool Create(string name);       
+        string GetName(int Id);
+        bool Create(Sector sector);       
     }
 }

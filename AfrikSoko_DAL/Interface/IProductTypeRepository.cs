@@ -11,7 +11,7 @@ namespace AfrikSoko_DAL.Interface
     {
         IEnumerable<ProductType> GetAll();
         string GetNameById(int Id);
-        bool Create(string name);
+        bool Create(ProductType pt);
         IEnumerable<ProductType> GetFavoriteByUserId(int id);
         void AddFavorite(int userId, int prodtypeId);
     }

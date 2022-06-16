@@ -28,6 +28,12 @@ namespace AfrikSokoApi.Controllers
             _userService = userService;
      
         }
+        /// <summary>
+        /// Connect as user (Login)
+        /// </summary>
+        /// <response code="200"></response>
+        /// <response code="400">There is an error on server side</response>
+        /// <remarks>Accessible only for user who has already registered before</remarks>
         //[Authorize("User")]
         [HttpPost("login")]
         public IActionResult Login(FormLogin form)
@@ -48,7 +54,7 @@ namespace AfrikSokoApi.Controllers
         }
 
 
-        [AllowAnonymous]
+        //[AllowAnonymous]
         [HttpPost("register")]
         public IActionResult Register([FromBody] NewUserInfo newUser)
         {

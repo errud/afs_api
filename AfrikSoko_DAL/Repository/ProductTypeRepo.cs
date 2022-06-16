@@ -38,11 +38,11 @@ namespace AfrikSoko_DAL.Repository
 
             return cnx.ExecuteScalar(cmd).ToString() ?? "";
         }
-        public bool Create(string name)
+        public bool Create(ProductType pt)
         {
             Command cmd = new Command("AddProductType", true);
 
-            cmd.AddParameter("name", name);
+            cmd.AddParameter("name", pt.Name);
 
             return cnx.ExecuteNonQuery(cmd) == 1;
         }

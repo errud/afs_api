@@ -12,8 +12,8 @@ namespace AfrikSoko_DAL.Interface
         IEnumerable<Category> GetAll();
         string GetNameById(int Id);
         string GetUrlById(int Id);
-        bool Create(string name, string url);
-        bool Update(int id, string name, string url);
+        bool Create(Category c);
+        bool Update(Category c);
         bool Delete(int Id);
     }
 }

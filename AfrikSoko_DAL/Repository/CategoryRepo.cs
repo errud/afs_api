@@ -50,23 +50,23 @@ namespace AfrikSoko_DAL.Repository
             return cnx.ExecuteScalar(cmd).ToString() ?? "";
         }
 
-        public bool Create(string name, string url)
+        public bool Create(Category c)
         {
             Command cmd = new Command("AddCategory", true);
 
-            cmd.AddParameter("name", name);
-            cmd.AddParameter("url", url);
+            cmd.AddParameter("name", c.Name);
+            cmd.AddParameter("url", c.Url);
 
             return cnx.ExecuteNonQuery(cmd) == 1;
         }
 
-        public bool Update(int id, string name, string url)
+        public bool Update(Category c)
         {
             Command cmd = new Command("UpdateCategory", true);
 
-            cmd.AddParameter("name", name);
-            cmd.AddParameter("url", url);
-            cmd.AddParameter("id", id);
+            cmd.AddParameter("name", c.Name);
+            cmd.AddParameter("url", c.Url);
+            cmd.AddParameter("id", c.Id);
 
             return cnx.ExecuteNonQuery(cmd) == 1;
         }

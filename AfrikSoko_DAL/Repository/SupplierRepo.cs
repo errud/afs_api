@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace AfrikSoko_DAL.Repository
 {
-    public class SupplierRepo : BaseRepository, ISupplierRepository<Supplier, User>
+    public class SupplierRepo : BaseRepository, ISupplierRepository
     {
         public SupplierRepo(IConfiguration config) : base(config)
         {

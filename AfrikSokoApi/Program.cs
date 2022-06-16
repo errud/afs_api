@@ -19,16 +19,15 @@ builder.Services.AddScoped<BaseRepository>();
 builder.Services.AddScoped<IUserRepository<User>, UserRepo>();
 builder.Services.AddScoped<IProductRepository<Product, SupplyItem>, ProductRepo>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepo>();
-builder.Services.AddScoped<IBuyerRepository<Buyer, User>, BuyerRepo>();
+builder.Services.AddScoped<IBuyerRepository, BuyerRepo>();
 builder.Services.AddScoped<IProductTypeRepository, ProductTypeRepo>();
-builder.Services.AddScoped<ISupplierRepository<Supplier, User>, SupplierRepo>();
+builder.Services.AddScoped<ISupplierRepository, SupplierRepo>();
 builder.Services.AddScoped<ISupplyItemRepository, SupplyItemRepo>();
 builder.Services.AddScoped<ISectorRepository, SectorRepo>();
 builder.Services.AddScoped<IServiceRepository, ServiceRepo>();
 builder.Services.AddScoped<ICommentRepository, CommentRepo>();
 builder.Services.AddScoped<IRoleRepository, RoleRepo>();
 builder.Services.AddScoped<IAddressRepository, AddressRepo>();
-
 #endregion
 
 #region Local Services

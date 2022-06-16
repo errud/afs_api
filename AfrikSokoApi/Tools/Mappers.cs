@@ -67,6 +67,105 @@ namespace AfrikSokoApi.Tools
         }
 
 
+        public static API.Supplier ToApi(this DAL.Supplier s)
+        {
+            return new API.Supplier
+            {
+                Id = s.Id,
+                UserId=s.UserId,
+                Logo = s.Logo,
+                Company = s.Company,
+                SectorId = s.SectorId,
+                ServiceId = s.ServiceId,
+                Membership = s.Membership,
+                Contact = s.Contact,
+                Phone = s.Phone,
+                Email = s.Email,
+                Url = s.Url,
+                Address = s.Address,
+                City = s.City,
+                Country = s.Country,
+                AdditInfo = s.AdditInfo,
+                Status = s.Status,
+                Created = s.Created
+            };
+        }
+
+        public static API.Buyer ToApi(this DAL.Buyer b)
+        {
+            return new API.Buyer
+            {
+                Id = b.Id,
+                UserId = b.UserId,
+                Phone = b.Phone,
+                City = b.City,
+                Country = b.Country,
+                Company = b.Company,
+                Url = b.Url,
+                Status = b.Status
+            };
+        }
+
+        public static API.Category ToApi(this DAL.Category c)
+        {
+            return new API.Category
+            {
+                Id = c.Id,
+                Name = c.Name,
+                Url = c.Url,
+                Visible = c.Visible,
+                Deleted = c.Deleted,
+                Editing = c.Editing,
+                IsNew = c.IsNew
+            };
+        }
+
+
+        public static API.Comment ToApi(this DAL.Comment c)
+        {
+            return new API.Comment
+            {
+                Id = c.Id,
+                UserId = c.UserId,
+                ProductId = c.ProductId,
+                Content = c.Content
+       
+            };
+        }
+
+        public static API.Sector ToApi(this DAL.Sector s)
+        {
+            return new API.Sector
+            {
+                Id = s.Id,
+                SectorName = s.SectorName      
+            };
+        }
+
+        public static API.Service ToApi(this DAL.Service s)
+        {
+            return new API.Service
+            {
+                Id = s.Id,
+                ServiceName = s.ServiceName,
+                Price = s.Price,
+                Period = s.Period,
+                Note = s.Note
+            };
+        }
+
+        public static API.ProductType ToApi(this DAL.ProductType pt)
+        {
+            return new API.ProductType
+            {
+                Id = pt.Id,
+                Name = pt.Name,
+                Editing = pt.Editing,
+                IsNew = pt.IsNew         
+            };
+        }
+
+
         public static API.ProductOverview ViewAllToApi(this DAL.ProductOverview p)
         {
             return new API.ProductOverview
@@ -138,6 +237,165 @@ namespace AfrikSokoApi.Tools
                 Country = p.Country
             };
         }
+
+        public static DAL.Supplier ProToDal(this API.NewSupplierCreate n)
+        {
+            return new DAL.Supplier
+            {
+                UserId = n.UserId,
+                Logo = n.Logo,
+                Company = n.Company,
+                SectorId = n.SectorId,
+                ServiceId = n.ServiceId,
+                Membership = n.Membership,
+                Contact = n.Contact,
+                Phone = n.Phone,
+                Email = n.Email,
+                Url = n.Url,
+                Address = n.Address,
+                City = n.City,
+                Country = n.Country,
+                AdditInfo = n.AdditInfo,
+                Status = n.Status,
+                Created = n.Created
+            };
+        }
+
+
+        public static DAL.Supplier ProToDal(this API.ModifySupplier m)
+        {
+            return new DAL.Supplier
+            {
+                Id = m.Id,
+                UserId = m.UserId,
+                Logo = m.Logo,
+                Company = m.Company,
+                SectorId = m.SectorId,
+                ServiceId = m.ServiceId,
+                Membership = m.Membership,
+                Contact = m.Contact,
+                Phone = m.Phone,
+                Email = m.Email,
+                Url = m.Url,
+                Address = m.Address,
+                City = m.City,
+                Country = m.Country,
+                AdditInfo = m.AdditInfo,
+                Status = m.Status,
+                Created = m.Created
+            };
+        }
+
+        public static DAL.Buyer ProToDal(this API.NewBuyerCreate n)
+        {
+            return new DAL.Buyer
+            {
+                UserId = n.UserId,
+                Phone = n.Phone,
+                City = n.City,
+                Country = n.Country,
+                Company = n.Company,
+                Url = n.Url,
+                Status = n.Status
+            };
+        }
+
+
+        public static DAL.Buyer ProToDal(this API.ModifyBuyer m)
+        {
+            return new DAL.Buyer
+            {
+                Id = m.Id,
+                UserId = m.UserId,
+                Phone = m.Phone,
+                City = m.City,
+                Country = m.Country,
+                Company = m.Company,
+                Url = m.Url,
+                Status = m.Status
+            };
+        }
+
+        public static DAL.Category ProToDal(this API.NewCategoryCreate n)
+        {
+            return new DAL.Category
+            {
+                Name = n.Name,
+                Url = n.Url,
+                Visible = n.Visible,
+                Deleted = n.Deleted
+     
+            };
+        }
+
+        public static DAL.Category ProToDal(this API.ModifyCategory m)
+        {
+            return new DAL.Category
+            {
+                Id = m.Id,
+                Name = m.Name,
+                Url = m.Url,
+                Visible = m.Visible,
+                Deleted = m.Deleted
+
+            };
+        }
+
+        public static DAL.Comment ProToDal(this API.NewCommentCreate n)
+        {
+            return new DAL.Comment
+            {
+                UserId = n.UserId,
+                ProductId = n.ProductId,
+                Content = n.Content
+
+            };
+        }
+
+        public static DAL.Comment ProToDal(this API.ModifyComment m)
+        {
+            return new DAL.Comment
+            {
+                Id = m.Id,
+                UserId = m.UserId,
+                ProductId = m.ProductId,
+                Content = m.Content
+            };
+        }
+        public static DAL.Sector ProToDal(this API.NewSectorCreate n)
+        {
+            return new DAL.Sector
+            {
+                SectorName = n.SectorName
+            };
+        }
+
+        public static DAL.Service ProToDal(this API.NewServiceCreate n)
+        {
+            return new DAL.Service
+            {
+                ServiceName = n.ServiceName,
+                Price = n.Price,
+                Period = n.Period,
+                Note = n.Note
+            };
+        }
+
+        public static DAL.ProductType ProToDal(this API.NewProductTypeCreate n)
+        {
+            return new DAL.ProductType
+            {
+                Name = n.Name,
+                IsNew = n.IsNew,
+                Editing = n.Editing
+            };
+        }
+
+
+
+
+
+
 
     }
 }

@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace AfrikSoko_DAL.Repository
 {
-    public class BuyerRepo : BaseRepository, IBuyerRepository<Buyer, User>
+    public class BuyerRepo : BaseRepository, IBuyerRepository
     {
         public BuyerRepo(IConfiguration config) : base(config)
         {

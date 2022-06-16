@@ -34,18 +34,18 @@ namespace AfrikSoko_DAL.Repository
             return cnx.ExecuteReader(cmd, Converter);
         }
 
-        public string GetNameById(int Id)
+        public string GetName(int Id)
         {
             Command cmd = new Command("SELECT SectorName FROM Sector WHERE Id = @Id");
             cmd.AddParameter("Id", Id);
 
             return cnx.ExecuteScalar(cmd).ToString() ?? "";
         }
-        public bool Create(string name)
+        public bool Create(Sector s)
         {
             Command cmd = new Command("AddSector", true);
 
-            cmd.AddParameter("secname", name);
+            cmd.AddParameter("secname", s.SectorName);
 
             return cnx.ExecuteNonQuery(cmd) == 1;
         }

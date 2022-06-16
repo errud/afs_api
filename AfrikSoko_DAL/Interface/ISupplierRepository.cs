@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AfrikSoko_DAL.Interface
 {
-    public interface ISupplierRepository<Supplier, User>
+    public interface ISupplierRepository
     {
         IEnumerable<Supplier> GetAll();
         Supplier GetById(int Id);

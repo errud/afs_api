@@ -55,3 +55,4 @@ C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSokoApi\
 C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSokoApi\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSokoApi\bin\Debug\net6.0\AfrikSoko_BLL.dll
 C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSokoApi\bin\Debug\net6.0\AfrikSoko_BLL.pdb
+C:\Users\Student\Documents\2021XTraining\20220621Prod\AfrikSokoApi\AfrikSokoApi\obj\Debug\net6.0\AfrikSokoApi.MvcApplicationPartsAssemblyInfo.cs
