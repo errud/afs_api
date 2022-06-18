@@ -33,19 +33,19 @@ namespace AfrikSoko_DAL.Repository
 
         }
 
-        public IEnumerable<Product> GetAll()
+       public IEnumerable<Product> GetAll()
         {
             Command cmd = new Command("SELECT * FROM Product");
 
             return cnx.ExecuteReader(cmd, Converter);
         }
 
-        public IEnumerable<ProductOverview> ViewAll()
+        /*public IEnumerable<ProductOverview> GetAll()
         {
             Command cmd = new Command("SELECT * FROM V_ProductMain");
 
             return cnx.ExecuteReader(cmd, Converters.ProdOverviewConverter);
-        }
+        }*/
 
         public IEnumerable<Product> GetByCategoryId(int Id)
         {
@@ -54,6 +54,14 @@ namespace AfrikSoko_DAL.Repository
 
             return cnx.ExecuteReader(cmd, Converter);
         }
+
+        /*public ProductOverview GetByUser(int Id)
+        {
+            Command cmd = new Command("SELECT * FROM V_ProductMain WHERE Uid = @id");
+            cmd.AddParameter("id", Id);
+
+            return cnx.ExecuteReader(cmd, Converters.ProdOverviewConverter).FirstOrDefault();
+        }*/
 
         public Product GetById(int Id)
         {

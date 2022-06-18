@@ -59,10 +59,10 @@ namespace AfrikSoko_BLL.LocalServices
         {
             int newUserId = _userRepo.Register(m.Email, m.Password, m.FirstName, m.LastName, m.NickName);
 
-            foreach (int prodtypeId in m.FavoriteId)
+          /*  foreach (int prodtypeId in m.FavoriteId)
             {
                 _prodtRepo.AddFavorite(newUserId, prodtypeId);
-            }
+            }*/
         }
         /*
         public void RegisterUser(CompleteAppUser user)

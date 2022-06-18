@@ -122,7 +122,7 @@ namespace AfrikSoko_DAL.Tools
                 ProductType = reader["ProductType"].ToString(),
                 Quantity = (int)reader["Quantity"],
                 TotalPrice = (decimal)reader["TotalPrice"],
-                UserId = (int)reader["UserId"]
+                //UserId = (int)reader["UserId"]
 
             };
 

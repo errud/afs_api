@@ -166,6 +166,22 @@ namespace AfrikSokoApi.Tools
         }
 
 
+        public static API.SupplyItemOverview ToApi(this DAL.SupplyItemOverview si)
+        {
+            return new API.SupplyItemOverview
+            {
+                //UserId = si.UserId,
+                FirstName = si.FirstName,
+                LastName = si.LastName,
+                Email = si.Email,
+                ProductTitle = si.ProductTitle,
+                ProductType = si.ProductType,
+                Quantity = si.Quantity,
+                TotalPrice = si.TotalPrice 
+            };
+        }
+
+
         public static API.ProductOverview ViewAllToApi(this DAL.ProductOverview p)
         {
             return new API.ProductOverview
@@ -391,7 +407,29 @@ namespace AfrikSokoApi.Tools
             };
         }
 
+        public static DAL.SupplyItem ProToDal(this API.NewSupplyItemCreate n)
+        {
+            return new DAL.SupplyItem
+            {
+              UserId = n.UserId,
+              ProductId= n.ProductId,
+              ProductTypeId = n.ProductTypeId,
+              Quantity = n.Quantity,
+              TotalPrice = n.TotalPrice
+            };
+        }
 
+        public static DAL.SupplyItem ProToDal(this API.ModifySupplyItem ms)
+        {
+            return new DAL.SupplyItem
+            {
+                UserId = ms.UserId,
+                ProductId = ms.ProductId,
+                ProductTypeId = ms.ProductTypeId,
+                Quantity = ms.Quantity,
+                TotalPrice = ms.TotalPrice
+            };
+        }
 
 
 

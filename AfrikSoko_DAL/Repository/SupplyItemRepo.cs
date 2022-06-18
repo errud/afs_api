@@ -33,13 +33,13 @@ namespace AfrikSoko_DAL.Repository
         }
 
 
-        public IEnumerable<SupplyItem> GetAll()
+        public IEnumerable<SupplyItemOverview> GetAll()
         {
-            Command cmd = new Command("SELECT * FROM SupplyItems");
-            return cnx.ExecuteReader(cmd, Converter);
+            Command cmd = new Command("SELECT a.FirstName as FirstName, a.LastName as LastName, a.Email as Email, p.Title as ProductTitle, pt.Name as ProductType, su.Quantity as Quantity, su.TotalPrice as TotalPrice FROM SupplyItems su JOIN AppUser a ON su.UserId = a.Id JOIN Product p ON su.ProductId = p.id JOIN ProductType pt ON pt.id = su.ProductTypeId");
+            return cnx.ExecuteReader(cmd, Converters.SupplyItemDetailedConverter);
         }
 
-        public IEnumerable<SupplyItemOverview> GetSupplyItemByUser(int Id)
+        public IEnumerable<SupplyItemOverview> GetByUser(int Id)
         {
             Command cmd = new Command("SELECT a.FirstName as FirstName, a.LastName as LastName, a.Email as Email, p.Title as ProductTitle, pt.Name as ProductType, su.Quantity as Quantity, su.TotalPrice as TotalPrice FROM SupplyItems su JOIN AppUser a ON su.UserId = a.Id JOIN Product p ON su.ProductId = p.id JOIN ProductType pt ON pt.id = su.ProductTypeId WHERE su.UserId = @Id");
             cmd.AddParameter("Id", Id);

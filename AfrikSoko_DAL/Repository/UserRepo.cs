@@ -109,7 +109,7 @@ namespace AfrikSoko_DAL.Repository
 
         public User GetById(int Id)
         {
-            Command cmd = new Command("SELECT * FROM [AppUser] WHERE Id = @Id");
+            Command cmd = new Command("SELECT * FROM [V_AppUser] WHERE Id = @Id");
             cmd.AddParameter("Id", Id);
 
             return cnx.ExecuteReader(cmd, Converters.Convert).FirstOrDefault();
@@ -117,7 +117,7 @@ namespace AfrikSoko_DAL.Repository
 
         public User GetByEmail(string email)
         {
-            Command cmd = new Command("SELECT * FROM [AppUser] WHERE Email = @email");
+            Command cmd = new Command("SELECT * FROM [V_AppUser] WHERE Email = @email");
             cmd.AddParameter("email", email);
 
             return cnx.ExecuteReader(cmd, Converters.Convert).FirstOrDefault();

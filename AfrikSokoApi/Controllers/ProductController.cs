@@ -67,13 +67,27 @@ namespace AfrikSokoApi.Controllers
         }
 
         /// <summary>
+        /// Return the Product based on its Id
+        /// Parameter type as integer
+        /// </summary>
+        /// <response code="200">Return one product</response>
+        /// <response code="400">There is an error on server side</response>
+        /// <returns>Object type is product</returns>
+        /// <remarks>Accessible only if Admin role user</remarks>
+        /*[HttpGet("{id}")]
+        public IActionResult GetByProd(int id)
+        {
+            return Ok(_prorepo.GetByProd(id).ProToApi());
+        }
+
+        /// <summary>
         /// Allow to Register a New Product
         /// Requires a model Product to Dal
         /// </summary>
         /// <response code="200">Creation Ok</response>
         /// <response code="400">There is an error on server side</response>
         /// <returns>A message in the event of error</returns>
-        /// <remarks>Accessible only if Admin role user</remarks>        
+        /// <remarks>Accessible only if Admin role user</remarks>  */      
         [HttpPost]
         public IActionResult Create(NewProductCreate form)
         {

@@ -10,10 +10,10 @@ namespace AfrikSoko_DAL.Interface
     public interface IProductRepository<Product, SupplyItem>
     {
         IEnumerable<Product> GetAll();
-        IEnumerable<ProductOverview> ViewAll();
+        //IEnumerable<ProductOverview> GetAll();
         IEnumerable<Product> GetByCategoryId(int Id);
+        //ProductOverview GetByUser(int Id);
         Product GetById(int Id);
-        //void SetSuppliedItem(int UserId, int ProductId, int ProductTypeId, string Quantity, decimal TotalPrice);
         bool Create(Product p);
         bool Update(Product p);
         bool Delete(int Id);        
